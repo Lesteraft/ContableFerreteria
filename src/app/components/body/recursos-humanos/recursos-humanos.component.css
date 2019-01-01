@@ -26,9 +26,11 @@
     padding-left: 5px!important;
 }
 
+
+/*
 .barraLateral li a {
     color: rgb(245, 245, 245) !important;
-}
+}*/
 
 a:active {
     font-size: 20px;
@@ -39,4 +41,8 @@ a:active {
 a:hover {
     font-size: 18px;
     text-decoration: underline !important;
+}
+
+.navbar-nav {
+    flex-direction: column;
 }
