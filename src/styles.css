@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+#bodyId {
+    background-color: rgb(212, 231, 220);
+}
+
+.form-row div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-link {
+    border-width: 0;
+    color: black;
+}
+
+.btn-link:hover {
+    text-decoration: underline!important;
+    color: black;
+}
+
+button {
+    outline: none!important;
+}

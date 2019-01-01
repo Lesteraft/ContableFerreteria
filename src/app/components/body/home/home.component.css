@@ -1,0 +1,14 @@
+.bienvenida {
+    padding-top: 25%;
+}
+
+.bienvenida h5 {
+    width: 127px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.bienvenida div {
+    max-width: 440px;
+    margin: auto;
+}

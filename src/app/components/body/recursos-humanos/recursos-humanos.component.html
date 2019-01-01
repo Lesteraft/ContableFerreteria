@@ -1,0 +1,28 @@
+<div class="" style="margin: 0 0;">
+    <div class="row">
+        <div class=" col-xl-2 col-lg-2 col-md-3 col-sm-4 col-3 barraLateral">
+            <h3 class='text-center'>Opciones</h3>
+            <hr>
+            <ul class="mt-5">
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['empleado']" routerLinkActive="active" id="btn-empleado"> <i class="fas fa-user"></i> Empleado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['add-empleado']" routerLinkActive="active" id="btn-addEmpleado"><i class="fas fa-user-plus"></i> Añadir</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['plantilla']" routerLinkActive="active" id="btn-planilla"><i class="fas fa-calendar-check"></i> Planilla</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['eliminar-empleado']" routerLinkActive="active" id="btn-deleteEmpleado"><i class="fas fa-user-minus"></i> Eliminar</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8 col-9" id="contenedorInfo">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+
+    </div>
+</div>

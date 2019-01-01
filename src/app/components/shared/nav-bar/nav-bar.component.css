@@ -1,0 +1,38 @@
+.nav-item {
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+
+ul {
+    width: 100%;
+}
+
+.db-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1007;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
+}
+
+.row {
+    margin: 0;
+}
+
+.navbar {
+    background-color: #DCC28D !important;
+    padding: 0rem 1rem;
+}
+
+.navbarSupportedContent li {
+    cursor: pointer!important;
+}
+
+.btn-link {
+    border-width: 0;
+    color: black;
+}
+
+.btn-link:hover {
+    text-decoration: underline!important;
+}

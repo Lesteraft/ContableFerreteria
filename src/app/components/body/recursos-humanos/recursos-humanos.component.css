@@ -1,0 +1,42 @@
+.barraLateral li {
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.barraLateral ul {
+    padding-left: 0px;
+}
+
+.barraLateral button {
+    text-align: left;
+    cursor: pointer;
+}
+
+.barraLateral {
+    background-color: transparent;
+    height: 90%;
+    bottom: auto;
+    top: auto;
+    position: absolute;
+    float: right;
+    right: 0%;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    padding-left: 5px!important;
+}
+
+.barraLateral li a {
+    color: rgb(245, 245, 245) !important;
+}
+
+a:active {
+    font-size: 20px;
+    text-decoration: underline !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+a:hover {
+    font-size: 18px;
+    text-decoration: underline !important;
+}

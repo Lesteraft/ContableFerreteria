@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div id="login-container" class="col-12">
+            <div class="medio">
+                <h2>Inicio de Sesión</h2>
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3 col-12">
+                        <label for="txt-user">Usuario</label>
+                        <input type="text" class="form-control" id="txt-user" (keyup.enter)='login();' placeholder="Usuario" value="Lester" required>
+                        <div class="valid-feedback">
+                            Excelente!
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese su usuario.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3 col-12">
+                        <label for="txt-password">Contraseña</label>
+                        <input type="password" class="form-control" id="txt-password" (keyup.enter)='login();' placeholder="Contraseña" value="" required>
+                        <div class="valid-feedback">
+                            Excelente!
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese su usuario.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" (click)='login()' type="button" id="btn-login">Iniciar Sesión</button>
+            </form>
+
+            <div>
+            </div>
+        </div>
+    </div>
+</div>
