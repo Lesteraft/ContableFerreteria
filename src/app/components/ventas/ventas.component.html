@@ -1,0 +1,41 @@
+<div class="" style="margin: 0 0;">
+    <div class="row">
+        <div class=" col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12 barraLateral sidebar">
+            <h3 class='text-center'>Opciones</h3>
+            <hr class="mb-5">
+            <nav class="navbar-expand-md navbar-dark text-center pb-5">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent2">
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['cliente']" routerLinkActive="active" id="btn-empleado"> <i class="fas fa-user"></i> Informacion cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['add-cliente']" routerLinkActive="active" id="btn-addEmpleado"><i class="fas fa-user-plus"></i> Añadir cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['eliminar-cliente']" routerLinkActive="active" id="btn-deleteEmpleado"><i class="fas fa-user-minus"></i> Eliminar cliente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['']" routerLinkActive="" id="btn-deleteEmpleado"> <i class="fas fa-dolly    "></i> Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['']" routerLinkActive="" id="btn-deleteEmpleado"><i class="fa fa-cart-plus" aria-hidden="true"></i> Añadir producto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['']" routerLinkActive="" id="btn-deleteEmpleado"><i class="fas fa-trash-alt    "></i> Eliminar producto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-9 col-sm-12 col-12" id="contenedorInfo">
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+
+    </div>
+</div>

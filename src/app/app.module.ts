@@ -14,6 +14,10 @@ import { AddEmpleadoComponent } from './components/recursos-humanos/add-empleado
 import { EliminarEmpleadoComponent } from './components/recursos-humanos/eliminar-empleado/eliminar-empleado.component';
 import { PlantillaComponent } from './components/recursos-humanos/plantilla/plantilla.component';
 import { EmpleadoComponent } from './components/recursos-humanos/empleado/empleado.component';
+import { VentasComponent } from './components/ventas/ventas.component';
+import { AddClienteComponent } from './components/ventas/add-cliente/add-cliente.component';
+import { EliminarClienteComponent } from './components/ventas/eliminar-cliente/eliminar-cliente.component';
+import { ClienteComponent } from './components/ventas/cliente/cliente.component';
 
 
 @NgModule({
@@ -26,7 +30,11 @@ import { EmpleadoComponent } from './components/recursos-humanos/empleado/emplea
     AddEmpleadoComponent,
     EliminarEmpleadoComponent,
     PlantillaComponent,
-    EmpleadoComponent
+    EmpleadoComponent,
+    VentasComponent,
+    AddClienteComponent,
+    EliminarClienteComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,
