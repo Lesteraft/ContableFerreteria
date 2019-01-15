@@ -18,6 +18,9 @@ import { VentasComponent } from './components/ventas/ventas.component';
 import { AddClienteComponent } from './components/ventas/add-cliente/add-cliente.component';
 import { EliminarClienteComponent } from './components/ventas/eliminar-cliente/eliminar-cliente.component';
 import { ClienteComponent } from './components/ventas/cliente/cliente.component';
+import { ProductosComponent } from './components/ventas/productos/productos.component';
+import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
+import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { ClienteComponent } from './components/ventas/cliente/cliente.component'
     VentasComponent,
     AddClienteComponent,
     EliminarClienteComponent,
-    ClienteComponent
+    ClienteComponent,
+    ProductosComponent,
+    AddProductoComponent,
+    EliminarProductoComponent
   ],
   imports: [
     BrowserModule,

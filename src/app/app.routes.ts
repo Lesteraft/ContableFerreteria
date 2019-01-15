@@ -13,6 +13,9 @@ import { VentasComponent } from './components/ventas/ventas.component';
 import { AddClienteComponent } from './components/ventas/add-cliente/add-cliente.component';
 import { EliminarClienteComponent } from './components/ventas/eliminar-cliente/eliminar-cliente.component';
 import { ClienteComponent } from './components/ventas/cliente/cliente.component';
+import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
+import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
+import { ProductosComponent } from './components/ventas/productos/productos.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -34,7 +37,10 @@ export const ROUTES: Routes = [
         children: [
             {path: 'add-cliente', component: AddClienteComponent},
             {path: 'eliminar-cliente', component: EliminarClienteComponent},
-            {path: 'cliente', component: ClienteComponent}
+            {path: 'cliente', component: ClienteComponent},
+            {path: 'add-producto', component: AddProductoComponent},
+            {path: 'eliminar-producto', component: EliminarProductoComponent},
+            {path: 'producto', component: ProductosComponent},
         ]
     },
     { path: '' , pathMatch: 'full', redirectTo:  'home' },
