@@ -1,0 +1,109 @@
+<div class="card border-warning">
+    <div class="card-body text-center">
+        <h5>Eliminar Proveedor</h5>
+    </div>
+</div>
+<hr>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Buscar Proveedor</h6>
+    </div>
+    <div class="card-body">
+        <form class="needs-validation">
+            <div class="form-row">
+                <div class="col-md-3 mb-2">
+                    <label for="validationCustomProveedorD01">Codigo Proveedor</label>
+                    <input type="text" class="form-control" id="validationCustomProveedorD01" placeholder="Codigo Proveedor" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="validationCustomProveedorD02">Nombre Proveedor</label>
+                    <input type="text" class="form-control" id="validationCustomProveedorD02" placeholder="Codigo Proveedor" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-2">
+                    <label for="validationCustomProveedorD03">Proveedores</label>
+                    <select class="form-control">
+          <option>Proveedores</option>
+        </select>
+                </div>
+            </div>
+        </form>
+        <div class="card-body text-center">
+            <button class="btn btn-info" (click)="buscarProveedor();">Buscar Proveedor</button>
+        </div>
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Datos Proveedor</h6>
+    </div>
+    <div class="card-body">
+
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Razones de la Eliminación</h6>
+    </div>
+    <div class="card-body ml-3 mr-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomProveedorD04">
+            <label class="form-check-label" for="validationCustomProveedorD04">
+      Caduca
+    </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomProveedorD05">
+            <label class="form-check-label" for="validationCustomProveedorD05">
+      Mal Comportamiento
+    </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomProveedorD06">
+            <label class="form-check-label" for="validationCustomProveedorD06">
+      Quejas Continuas
+    </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomProveedorD07">
+            <label class="form-check-label" for="validationCustomProveedorD07">
+      No Satisface las Necesidades
+    </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomProveedorD07">
+            <label class="form-check-label" for="validationCustomProveedorD07">
+      Cierre de Operaciones
+    </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomProveedorD08">
+            <label class="form-check-label" for="validationCustomProveedorD08">
+      Otros
+    </label>
+        </div><br><br>
+        <div class="form-group">
+            <label for="validationCustomProveedorD09">Comentarios/Otra Razón por la Eliminación</label>
+            <textarea class="form-control" id="validationCustomProveedorD09" rows="3"></textarea>
+        </div>
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Peligro</h6>
+    </div>
+    <div class="card-body">
+        <cite title="Source Title">Bajo estas Acciones, se esta conciente que no se podra volver a recuperar la información de dicho proveedor.</cite>
+    </div>
+</div>
+<hr>
+<div class="card border-danger">
+    <div class="card-body text-center">
+        <button class="btn btn-danger btn-block" (click)="eliminarProveedor();">Eliminar Proveedor</button>
+    </div>
+</div>

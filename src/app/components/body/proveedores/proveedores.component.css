@@ -1,0 +1,18 @@
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    font-size: 18px;
+    text-decoration: underline !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.navbar-nav {
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {}

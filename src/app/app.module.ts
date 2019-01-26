@@ -21,6 +21,13 @@ import { ClienteComponent } from './components/ventas/cliente/cliente.component'
 import { ProductosComponent } from './components/ventas/productos/productos.component';
 import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
 import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
+import { ProveedoresComponent } from './components/body/proveedores/proveedores.component';
+import { CompraComponent } from './components/body/compra/compra.component';
+import { OrdenCompraComponent } from './components/compra/orden-compra/orden-compra.component';
+import { PeticionComponent } from './components/compra/orden-compra/peticion/peticion.component';
+import { ProveedorCompraComponent } from './components/compra/orden-compra/proveedor-compra/proveedor-compra.component';
+import { AniadirProveedorComponent } from './components/proveedores/aniadir-proveedor/aniadir-proveedor.component';
+import { DeleteProveedorComponent } from './components/proveedores/delete-proveedor/delete-proveedor.component';
 
 
 @NgModule({
@@ -40,7 +47,14 @@ import { EliminarProductoComponent } from './components/ventas/eliminar-producto
     ClienteComponent,
     ProductosComponent,
     AddProductoComponent,
-    EliminarProductoComponent
+    EliminarProductoComponent,
+    ProveedoresComponent,
+    CompraComponent,
+    OrdenCompraComponent,
+    PeticionComponent,
+    ProveedorCompraComponent,
+    AniadirProveedorComponent,
+    DeleteProveedorComponent
   ],
   imports: [
     BrowserModule,

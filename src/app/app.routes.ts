@@ -2,6 +2,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/body/home/home.component';
 import { RecursosHumanosComponent } from './components/body/recursos-humanos/recursos-humanos.component';
+import { ProveedoresComponent } from './components/body/proveedores/proveedores.component';
 
 
 // childRoutes from Recursos-Humanos
@@ -16,6 +17,14 @@ import { ClienteComponent } from './components/ventas/cliente/cliente.component'
 import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
 import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
 import { ProductosComponent } from './components/ventas/productos/productos.component';
+
+// childRoutes from Proveedores
+import { AniadirProveedorComponent } from './components/proveedores/aniadir-proveedor/aniadir-proveedor.component';
+import { DeleteProveedorComponent } from './components/proveedores/delete-proveedor/delete-proveedor.component';
+import { CompraComponent } from './components/body/compra/compra.component';
+import { OrdenCompraComponent } from './components/compra/orden-compra/orden-compra.component';
+import { PeticionComponent } from './components/compra/orden-compra/peticion/peticion.component';
+import { ProveedorCompraComponent } from './components/compra/orden-compra/proveedor-compra/proveedor-compra.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -41,6 +50,25 @@ export const ROUTES: Routes = [
             {path: 'add-producto', component: AddProductoComponent},
             {path: 'eliminar-producto', component: EliminarProductoComponent},
             {path: 'producto', component: ProductosComponent},
+        ]
+    },
+    {   path: 'proveedores',
+        component: ProveedoresComponent,
+        children: [
+            {path: 'add-proveedor', component: AniadirProveedorComponent},
+            {path: 'eliminar-proveedor', component: DeleteProveedorComponent}
+        ]
+    },
+    {   path: 'compra',
+        component: CompraComponent,
+        children: [
+            {   path: 'orden-compra',
+                component: OrdenCompraComponent,
+                children: [
+                    {path: 'peticion-compra', component: PeticionComponent},
+                    {path: 'proveedor-compra', component: ProveedorCompraComponent}
+                ]
+            }
         ]
     },
     { path: '' , pathMatch: 'full', redirectTo:  'home' },

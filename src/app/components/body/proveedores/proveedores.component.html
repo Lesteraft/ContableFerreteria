@@ -1,0 +1,15 @@
+<div class="row mt-3 ml-3">
+    <div class="card border-primary barraLateral mb-3">
+        <h5 class="card-header text-center">Opciones</h5>
+        <div class="card-body text-primary pb-5">
+            <!--a class="nav-link" [routerLink]="['proveedor']" routerLinkActive="active" id="btn-proveedor"> <i class="fas fa-user"></i> Informacion Proveedores</a-->
+            <a class="nav-link" [routerLink]="['add-proveedor']" routerLinkActive="active" id="btn-addProveedor"><i class="fas fa-user-plus"></i> Añadir Proveedor</a>
+            <a class="nav-link" [routerLink]="['eliminar-proveedor']" routerLinkActive="active" id="btn-deleteProveedor"><i class="fas fa-user-minus"></i> Eliminar Proveedor</a>
+        </div>
+    </div>
+    <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12 col-12">
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
