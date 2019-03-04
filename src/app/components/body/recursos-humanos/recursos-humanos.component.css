@@ -57,3 +57,11 @@ a:hover {
 .row {
     margin-right: 0px;
 }
+
+#contenedorInfo {
+    margin: auto;
+}
+
+a {
+    color: #8E9FBB !important;
+}
