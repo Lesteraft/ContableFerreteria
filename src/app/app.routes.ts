@@ -1,11 +1,13 @@
 // importaciones principales desde navBar
 import { Routes } from '@angular/router';
-import { CompraComponent } from './components/body/compra/compra.component';
 import { HomeComponent } from './components/body/home/home.component';
-import { ProveedoresComponent } from './components/body/proveedores/proveedores.component';
-import { RecursosHumanosComponent } from './components/body/recursos-humanos/recursos-humanos.component';
-import { VentaComponent } from './components/body/venta/venta.component';
-import { ClientesComponent } from './components/body/clientes/clientes.component';
+
+import { CompraComponent } from './components/body/izquierdo/compra/compra.component';
+import { ProveedoresComponent } from './components/body/izquierdo/proveedores/proveedores.component';
+import { RecursosHumanosComponent } from './components/body/izquierdo/recursos-humanos/recursos-humanos.component';
+import { VentaComponent } from './components/body/izquierdo/venta/venta.component';
+import { ClientesComponent } from './components/body/izquierdo/clientes/clientes.component';
+import { InventarioComponent } from './components/body/izquierdo/inventario/inventario.component';
 
 // childRoutes from Recursos-Humanos
 import { AddEmpleadoComponent } from './components/recursos-humanos/add-empleado/add-empleado.component';
@@ -27,10 +29,13 @@ import { OrdenCompraComponent } from './components/compra/orden-compra/orden-com
 import { PeticionComponent } from './components/compra/orden-compra/peticion/peticion.component';
 import { ProveedorCompraComponent } from './components/compra/orden-compra/proveedor-compra/proveedor-compra.component';
 
-// chlidRoutes from Cliente
+// childRoutes from Cliente
 import { AddClienteComponent } from './components/clientes/add-cliente/add-cliente.component';
 import { EliminarClienteComponent } from './components/clientes/eliminar-cliente/eliminar-cliente.component';
 import { ClienteComponent } from './components/clientes/cliente/cliente.component';
+
+// childRoutes from Inventario
+import { ExistenciaComponent } from './components/inventario/existencia/existencia.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -80,6 +85,12 @@ export const ROUTES: Routes = [
             {path: 'add-cliente', component: AddClienteComponent},
             {path: 'eliminar-cliente', component: EliminarClienteComponent},
             {path: 'cliente', component: ClienteComponent},
+        ]
+    },
+    {   path: 'inventario',
+        component: InventarioComponent,
+        children: [
+            {path: 'existencia', component: ExistenciaComponent},
         ]
     },
     { path: '' , pathMatch: 'full', redirectTo:  'home' },

@@ -2,11 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 // importar rutas
+// rutas body izquierdo
+import { CompraComponent } from './components/body/izquierdo/compra/compra.component';
+import { ClientesComponent } from './components/body/izquierdo/clientes/clientes.component';
+import { InventarioComponent } from './components/body/izquierdo/inventario/inventario.component';
+import { ProveedoresComponent } from './components/body/izquierdo/proveedores/proveedores.component';
+import { RecursosHumanosComponent } from './components/body/izquierdo/recursos-humanos/recursos-humanos.component';
+import { VentaComponent } from './components/body/izquierdo/venta/venta.component';
 
+// rutas body derecho
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/shared/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
-import { RecursosHumanosComponent } from './components/body/recursos-humanos/recursos-humanos.component';
 import { HomeComponent } from './components/body/home/home.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
@@ -20,15 +27,12 @@ import { ClienteComponent } from './components/clientes/cliente/cliente.componen
 import { ProductosComponent } from './components/ventas/productos/productos.component';
 import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
 import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
-import { ProveedoresComponent } from './components/body/proveedores/proveedores.component';
-import { CompraComponent } from './components/body/compra/compra.component';
 import { OrdenCompraComponent } from './components/compra/orden-compra/orden-compra.component';
 import { PeticionComponent } from './components/compra/orden-compra/peticion/peticion.component';
 import { ProveedorCompraComponent } from './components/compra/orden-compra/proveedor-compra/proveedor-compra.component';
 import { AniadirProveedorComponent } from './components/proveedores/aniadir-proveedor/aniadir-proveedor.component';
 import { DeleteProveedorComponent } from './components/proveedores/delete-proveedor/delete-proveedor.component';
-import { VentaComponent } from './components/body/venta/venta.component';
-import { ClientesComponent } from './components/body/clientes/clientes.component';
+import { ExistenciaComponent } from './components/inventario/existencia/existencia.component';
 
 
 @NgModule({
@@ -56,7 +60,9 @@ import { ClientesComponent } from './components/body/clientes/clientes.component
     AniadirProveedorComponent,
     DeleteProveedorComponent,
     VentaComponent,
-    ClientesComponent
+    ClientesComponent,
+    InventarioComponent,
+    ExistenciaComponent,
   ],
   imports: [
     BrowserModule,
