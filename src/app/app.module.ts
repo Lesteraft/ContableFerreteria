@@ -14,10 +14,9 @@ import { AddEmpleadoComponent } from './components/recursos-humanos/add-empleado
 import { EliminarEmpleadoComponent } from './components/recursos-humanos/eliminar-empleado/eliminar-empleado.component';
 import { PlantillaComponent } from './components/recursos-humanos/plantilla/plantilla.component';
 import { EmpleadoComponent } from './components/recursos-humanos/empleado/empleado.component';
-import { VentasComponent } from './components/ventas/ventas.component';
-import { AddClienteComponent } from './components/ventas/add-cliente/add-cliente.component';
-import { EliminarClienteComponent } from './components/ventas/eliminar-cliente/eliminar-cliente.component';
-import { ClienteComponent } from './components/ventas/cliente/cliente.component';
+import { AddClienteComponent } from './components/clientes/add-cliente/add-cliente.component';
+import { EliminarClienteComponent } from './components/clientes/eliminar-cliente/eliminar-cliente.component';
+import { ClienteComponent } from './components/clientes/cliente/cliente.component';
 import { ProductosComponent } from './components/ventas/productos/productos.component';
 import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
 import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
@@ -28,6 +27,8 @@ import { PeticionComponent } from './components/compra/orden-compra/peticion/pet
 import { ProveedorCompraComponent } from './components/compra/orden-compra/proveedor-compra/proveedor-compra.component';
 import { AniadirProveedorComponent } from './components/proveedores/aniadir-proveedor/aniadir-proveedor.component';
 import { DeleteProveedorComponent } from './components/proveedores/delete-proveedor/delete-proveedor.component';
+import { VentaComponent } from './components/body/venta/venta.component';
+import { ClientesComponent } from './components/body/clientes/clientes.component';
 
 
 @NgModule({
@@ -41,7 +42,6 @@ import { DeleteProveedorComponent } from './components/proveedores/delete-provee
     EliminarEmpleadoComponent,
     PlantillaComponent,
     EmpleadoComponent,
-    VentasComponent,
     AddClienteComponent,
     EliminarClienteComponent,
     ClienteComponent,
@@ -54,7 +54,9 @@ import { DeleteProveedorComponent } from './components/proveedores/delete-provee
     PeticionComponent,
     ProveedorCompraComponent,
     AniadirProveedorComponent,
-    DeleteProveedorComponent
+    DeleteProveedorComponent,
+    VentaComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,

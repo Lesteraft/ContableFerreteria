@@ -1,0 +1,110 @@
+<div class="card border-info">
+    <div class="card-body text-center">
+        <h5>Añadir Cliente</h5>
+    </div>
+</div>
+<hr>
+<div class="card">
+    <div class="card-header">
+        <h6>Datos Personales</h6>
+    </div>
+    <div class="card-body">
+        <form class="form-inline">
+            <div class="form-row">
+                <div class="form-group col-lg-auto">
+                    <label for="validationTooltip01">Nombre Cliente:&nbsp;</label>
+                    <input type="text" class="form-control form-control-sm" id="validationTooltip01" placeholder="Razón social" value="" required>
+                    <div class="invalid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="form-group col-lg-auto">
+                    <label for="">Correo Electronico:&nbsp;</label>
+                    <input type="email" class="form-control form-control-sm" placeholder="xxx@xxx.xxx">
+                </div>
+            </div><br><br>
+            <div class="form-row">
+                <div class="form-group col-lg-auto">
+                    <label for="">Telefonos de Contacto:&nbsp;</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Contacto 1">&nbsp;
+                    <input type="text" class="form-control form-control-sm" placeholder="Contacto 2">&nbsp;
+                    <input type="text" class="form-control form-control-sm" placeholder="Contacto 3">
+                </div>
+            </div><br><br>
+            <div class="form-row">
+                <div class="form-group col-lg-auto">
+                    <label for="">Ciudad:&nbsp;</label>
+                    <select name="slcCiudad" id="slcCiudad" class="form-control form-control-sm">
+                        <option>Ciudad</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-auto">
+                    <label for="">Zona:&nbsp;</label>
+                    <select name="slcZona" id="slcZona" class="form-control form-control-sm">
+                        <option>Zona</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-auto">
+                    <label for="">Distrito:&nbsp;</label>
+                    <select name="slcDistrito" id="slcDistrito" class="form-control form-control-sm">
+                        <option>Distrito</option>
+                    </select>
+                </div>
+            </div><br><br>
+            <div class="form-row">
+                <div class="form-group col-lg-auto">
+                    <label for="">Dirección Exacta:&nbsp;</label>
+                    <textarea name="txtADireccionExacta" id="txtADireccionExacta" cols="100" class="form-control"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div><br>
+<div class="card">
+    <div class="card-header">
+        <h6>Datos Fiscales</h6>
+    </div>
+    <div class="card-body">
+        <form class="form-inline">
+            <div class="form-row">
+                <div class="form-group col-lg-auto">
+                    <label for="">Razón Social:&nbsp;</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Razon Social">
+                </div>
+                <div class="form-group col-lg-auto">
+                    <label for="">R.U.C.:&nbsp;</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Ej: XXXXXXXXXXX">
+                </div>
+            </div><br><br>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="">Dirección Fiscal:&nbsp;</label>
+                    <textarea class="form-control" name="txtADireccionFiscal" id="txtADireccionFiscal" rows="2" cols="100" placeholder="Direccion Fiscal"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <h6>Datos Financieros</h6>
+    </div>
+    <div class="card-body">
+        <form class="form-inline">
+            <div class="form-row">
+                <div class="form-group col-lg-auto">
+                    <label for="">Linea de Credito:&nbsp;</label>
+                    <select name="slcLineaCredito" id="slcLineaCredito" class="form-control">
+                        <option>Linea de Credito</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-auto">
+                    <label for="">Tipo de Cliente:&nbsp;</label>
+                    <select name="slcTipoCliente" id="slcTipoCliente" class="form-control">
+                        <option>Tipo de Cliente</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
