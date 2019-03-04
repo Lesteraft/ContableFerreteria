@@ -1,6 +1,6 @@
 // importaciones principales desde navBar
 import { Routes } from '@angular/router';
-import { HomeComponent } from './components/body/home/home.component';
+import { HomeComponent } from './components/body/acceso/home/home.component';
 
 import { CompraComponent } from './components/body/izquierdo/compra/compra.component';
 import { ProveedoresComponent } from './components/body/izquierdo/proveedores/proveedores.component';
@@ -10,32 +10,32 @@ import { ClientesComponent } from './components/body/izquierdo/clientes/clientes
 import { InventarioComponent } from './components/body/izquierdo/inventario/inventario.component';
 
 // childRoutes from Recursos-Humanos
-import { AddEmpleadoComponent } from './components/recursos-humanos/add-empleado/add-empleado.component';
-import { EliminarEmpleadoComponent } from './components/recursos-humanos/eliminar-empleado/eliminar-empleado.component';
-import { PlantillaComponent } from './components/recursos-humanos/plantilla/plantilla.component';
-import { EmpleadoComponent } from './components/recursos-humanos/empleado/empleado.component';
+import { AddEmpleadoComponent } from './components/body/derecho/recursos-humanos/add-empleado/add-empleado.component';
+import { EliminarEmpleadoComponent } from './components/body/derecho/recursos-humanos/eliminar-empleado/eliminar-empleado.component';
+import { PlantillaComponent } from './components/body/derecho/recursos-humanos/plantilla/plantilla.component';
+import { EmpleadoComponent } from './components/body/derecho/recursos-humanos/empleado/empleado.component';
 
 // childRoutes from Ventas
-import { AddProductoComponent } from './components/ventas/add-producto/add-producto.component';
-import { EliminarProductoComponent } from './components/ventas/eliminar-producto/eliminar-producto.component';
-import { ProductosComponent } from './components/ventas/productos/productos.component';
+import { AddProductoComponent } from './components/body/derecho/ventas/add-producto/add-producto.component';
+import { EliminarProductoComponent } from './components/body/derecho/ventas/eliminar-producto/eliminar-producto.component';
+import { ProductosComponent } from './components/body/derecho/ventas/productos/productos.component';
 
 // childRoutes from Proveedores
-import { AniadirProveedorComponent } from './components/proveedores/aniadir-proveedor/aniadir-proveedor.component';
-import { DeleteProveedorComponent } from './components/proveedores/delete-proveedor/delete-proveedor.component';
+import { AniadirProveedorComponent } from './components/body/derecho/proveedores/aniadir-proveedor/aniadir-proveedor.component';
+import { DeleteProveedorComponent } from './components/body/derecho/proveedores/delete-proveedor/delete-proveedor.component';
 
 // childRoutes from Compra
-import { OrdenCompraComponent } from './components/compra/orden-compra/orden-compra.component';
-import { PeticionComponent } from './components/compra/orden-compra/peticion/peticion.component';
-import { ProveedorCompraComponent } from './components/compra/orden-compra/proveedor-compra/proveedor-compra.component';
+import { OrdenCompraComponent } from './components/body/derecho/compra/orden-compra/orden-compra.component';
+import { PeticionComponent } from './components/body/derecho/compra/orden-compra/peticion/peticion.component';
+import { ProveedorCompraComponent } from './components/body/derecho/compra/orden-compra/proveedor-compra/proveedor-compra.component';
 
 // childRoutes from Cliente
-import { AddClienteComponent } from './components/clientes/add-cliente/add-cliente.component';
-import { EliminarClienteComponent } from './components/clientes/eliminar-cliente/eliminar-cliente.component';
-import { ClienteComponent } from './components/clientes/cliente/cliente.component';
+import { AddClienteComponent } from './components/body/derecho/clientes/add-cliente/add-cliente.component';
+import { EliminarClienteComponent } from './components/body/derecho/clientes/eliminar-cliente/eliminar-cliente.component';
+import { ClienteComponent } from './components/body/derecho/clientes/cliente/cliente.component';
 
 // childRoutes from Inventario
-import { ExistenciaComponent } from './components/inventario/existencia/existencia.component';
+import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
