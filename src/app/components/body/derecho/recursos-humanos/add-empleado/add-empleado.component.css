@@ -1,3 +1,11 @@
 textarea {
     resize: none;
 }
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 60%;
+    color: #dc3545;
+}
