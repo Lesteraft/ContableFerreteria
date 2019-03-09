@@ -1,3 +1,105 @@
-<p>
-  eliminar-empleado works!
-</p>
+<div class="card border-danger">
+    <div class="card-body text-center">
+        <h5>Eliminar Empleado</h5>
+    </div>
+</div>
+<hr>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Buscar empleado</h6>
+    </div>
+    <div class="card-body">
+        <form class="needs-validation">
+            <div class="form-row">
+                <div class="col-md-6 mb-2">
+                    <label for="validationCustomempleadoD01">Codigo empleado</label>
+                    <input type="text" class="form-control" id="validationCustomempleadoD01" placeholder="Codigo empleado" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <label for="validationCustomempleadoD02">Nombre empleado</label>
+                    <input type="text" class="form-control" id="validationCustomempleadoD02" placeholder="Codigo empleado" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="card-body text-center col-12 col-md-6">
+            <button class="btn btn-outline-info btn-block ml-0 mr-0" (click)="buscarEmpleado();">Buscar empleado</button>
+        </div>
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Datos empleado</h6>
+    </div>
+    <div class="card-body">
+
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Razones de la Eliminación</h6>
+    </div>
+    <div class="card-body ml-3 mr-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomempleadoD04">
+            <label class="form-check-label" for="validationCustomempleadoD04">
+              Caduca
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomempleadoD05">
+            <label class="form-check-label" for="validationCustomempleadoD05">
+              Mal Comportamiento
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomempleadoD06">
+            <label class="form-check-label" for="validationCustomempleadoD06">
+              Quejas Continuas
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomempleadoD07">
+            <label class="form-check-label" for="validationCustomempleadoD07">
+              No Satisface las Necesidades
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomempleadoD07">
+            <label class="form-check-label" for="validationCustomempleadoD07">
+              Cierre de Operaciones
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomempleadoD08">
+            <label class="form-check-label" for="validationCustomempleadoD08">
+              Otros
+          </label>
+        </div><br><br>
+        <!--Material textarea-->
+        <div class="md-form">
+            <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
+            <label for="form7">Material textarea</label>
+        </div>
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Peligro</h6>
+    </div>
+    <div class="card-body">
+        <cite title="Source Title">Bajo estas Acciones, se esta conciente que no se podra volver a recuperar la
+          información de dicho empleado.</cite>
+    </div>
+</div>
+<hr>
+<div class="card border-danger">
+    <div class="card-body text-center">
+        <button class="btn btn-danger btn-block" (click)="eliminarEmpleado();">Eliminar empleado</button>
+    </div>
+</div>
