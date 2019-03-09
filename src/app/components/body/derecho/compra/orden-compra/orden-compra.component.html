@@ -8,10 +8,10 @@
     <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
             <li class="nav-item">
-                <a class="nav-link active" [routerLink]="['peticion-compra']">Petición de Compra</a>
+                <a class="nav-link" [routerLink]="['peticion-compra']" routerLinkActive="active">Petición de Compra</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" [routerLink]="['proveedor-compra']">Proveedor</a>
+                <a class="nav-link" [routerLink]="['proveedor-compra']" routerLinkActive="active">Proveedor</a>
             </li>
         </ul>
     </div>
@@ -28,8 +28,8 @@
     </div>
     <div class="card-body">
         <form>
-            <div class="form-row align-items-center">
-                <div class="col-auto">
+            <div class="form-row ">
+                <div class="col-sm-12 col-lg-4">
                     <div class="input-group mb-2">
                         <select name="slcCodProducto" id="slcCodProducto" class="form-control">
                             <option>Codigo Producto</option>
@@ -39,16 +39,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto">
+                <div class="col-sm-12 col-lg-4">
                     <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Cantidad">
                 </div>
-                <div class="col-auto">
+                <div class="col-sm-12 col-lg-4">
                     <select name="slcUnidad" id="slcUnidad" class="form-control">
                         <option>Unidad</option>
                     </select>
                 </div>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-2">Agregar</button>
+                <div class="col-6 mt-3">
+                    <button type="submit" class="btn btn-primary mb-2 btn-block">Agregar</button>
                 </div>
             </div>
         </form>

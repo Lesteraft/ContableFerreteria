@@ -1,0 +1,27 @@
+/******************************************* CARD - SUBMENÚ **************************************************/
+
+.barraLateral li {
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.barraLateral ul {
+    padding-left: 0px;
+}
+
+.barraLateral button {
+    text-align: left;
+    cursor: pointer;
+}
+
+.barraLateral a:hover {
+    text-decoration: underline !important;
+}
+
+.barraLateral a {
+    color: #525051!important;
+}
+
+
+/******************************************* MEDIA QUERY **************************************************/

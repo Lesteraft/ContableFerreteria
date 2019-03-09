@@ -12,4 +12,10 @@ export class EliminarEmpleadoComponent implements OnInit {
   ngOnInit() {
   }
 
+  eliminarEmpleado () {
+  }
+
+  buscarEmpleado () {
+  }
+
 }
