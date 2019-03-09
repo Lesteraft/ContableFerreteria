@@ -37,6 +37,10 @@ import { ClienteComponent } from './components/body/derecho/clientes/cliente/cli
 // childRoutes from Inventario
 import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
 import { IngresoMercaderiaComponent } from './components/body/derecho/inventario/ingreso-mercaderia/ingreso-mercaderia.component';
+import { DatosEmbalajeComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-embalaje/datos-embalaje.component';
+import { DatosEmpaqueComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-empaque/datos-empaque.component';
+import { DatosGeneralesComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-generales/datos-generales.component';
+
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -92,7 +96,14 @@ export const ROUTES: Routes = [
         component: InventarioComponent,
         children: [
             {path: 'existencia', component: ExistenciaComponent},
-            {path: 'ingreso-mercaderia', component: IngresoMercaderiaComponent},
+            {   path: 'ingreso-mercaderia',
+                component: IngresoMercaderiaComponent,
+                children: [
+                    {path: 'datos-generales', component: DatosGeneralesComponent},
+                    {path: 'embalaje', component: DatosEmbalajeComponent},
+                    {path: 'empaque', component: DatosEmpaqueComponent},
+                ],
+            },
         ]
     },
     { path: '' , pathMatch: 'full', redirectTo:  'home' },

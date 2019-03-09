@@ -38,6 +38,9 @@ import { AniadirProveedorComponent } from './components/body/derecho/proveedores
 import { DeleteProveedorComponent } from './components/body/derecho/proveedores/delete-proveedor/delete-proveedor.component';
 import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
 import { IngresoMercaderiaComponent } from './components/body/derecho/inventario/ingreso-mercaderia/ingreso-mercaderia.component';
+import { DatosGeneralesComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-generales/datos-generales.component';
+import { DatosEmbalajeComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-embalaje/datos-embalaje.component';
+import { DatosEmpaqueComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-empaque/datos-empaque.component';
 
 
 @NgModule({
@@ -69,6 +72,9 @@ import { IngresoMercaderiaComponent } from './components/body/derecho/inventario
     InventarioComponent,
     ExistenciaComponent,
     IngresoMercaderiaComponent,
+    DatosGeneralesComponent,
+    DatosEmbalajeComponent,
+    DatosEmpaqueComponent,
   ],
   imports: [
     BrowserModule,
