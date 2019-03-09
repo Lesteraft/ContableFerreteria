@@ -37,6 +37,7 @@ import { ProveedorCompraComponent } from './components/body/derecho/compra/orden
 import { AniadirProveedorComponent } from './components/body/derecho/proveedores/aniadir-proveedor/aniadir-proveedor.component';
 import { DeleteProveedorComponent } from './components/body/derecho/proveedores/delete-proveedor/delete-proveedor.component';
 import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
+import { IngresoMercaderiaComponent } from './components/body/derecho/inventario/ingreso-mercaderia/ingreso-mercaderia.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { ExistenciaComponent } from './components/body/derecho/inventario/existe
     ClientesComponent,
     InventarioComponent,
     ExistenciaComponent,
+    IngresoMercaderiaComponent,
   ],
   imports: [
     BrowserModule,
