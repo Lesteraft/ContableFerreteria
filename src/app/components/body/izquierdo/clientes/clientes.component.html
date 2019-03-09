@@ -1,13 +1,13 @@
 <div class="row mt-3 m-0">
-    <div class="card border-primary barraLateral col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 pr-0 pl-0">
-        <h5 class="card-header text-center">Opciones ( Clientes )</h5>
+    <div class="card border-primary barraLateral col-xl-2 col-lg-3 col-md-4 col-sm-12 col-12 pr-0 pl-0">
+        <h5 class="card-header text-center">Opciones (Clientes)</h5>
         <div class="card-body text-primary pr-0 pl-2">
             <a class="nav-link" [routerLink]="['cliente']" routerLinkActive="active" id="btn-empleado"> <i class="fas fa-user"></i> Informacion cliente</a>
             <a class="nav-link" [routerLink]="['add-cliente']" routerLinkActive="active" id="btn-addEmpleado"><i class="fas fa-user-plus"></i> Añadir cliente</a>
             <a class="nav-link" [routerLink]="['eliminar-cliente']" routerLinkActive="active" id="btn-deleteEmpleado"><i class="fas fa-user-minus"></i> Eliminar cliente</a>
         </div>
     </div>
-    <div class="pt-5 m-auto col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12 pr-0 padding-left-auto ">
+    <div class="m-auto col-xl-10 col-lg-9 col-md-8 col-sm-12 col-12 miniatura">
         <div>
             <router-outlet></router-outlet>
         </div>

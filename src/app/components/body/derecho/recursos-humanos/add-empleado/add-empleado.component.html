@@ -9,36 +9,38 @@
         <h6>Datos Personales</h6>
     </div>
     <div class="card-body">
-        <form class="form-inline">
+        <form class="form">
             <div class="form-row">
-                <div class="form-group col-lg-auto">
+                <div class="form-group col-lg-4">
                     <label for="validationCustom01">Nombre:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" id="validationCustom01" placeholder="Nombre" value="" required>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" value="" required>
                     <div class="invalid-feedback">
                         Debes llenar este campo.
                     </div>
                 </div>
-                <div class="form-group col-lg-auto">
+                <div class="form-group col-lg-4">
                     <label for="validationCustom02">Apellido:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" id="validationCustom02" placeholder="Apellido" value="" required>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Apellido" value="" required>
                     <div class="invalid-feedback">
                         Debes llenar este campo.
                     </div>
                 </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
+
+
+                <div class="form-group col-lg-4">
                     <label for="validationCustomUsername">Correo Electrónico:&nbsp;</label>
                     <div class="input-group">
-                        <input type="email" class="form-control form-control-sm" id="validationCustomUsername" placeholder="Correo electrónico" aria-describedby="inputGroupPrepend" required>
+                        <input type="email" class="form-control" id="validationCustomUsername" placeholder="Correo electrónico" aria-describedby="inputGroupPrepend" required>
                         <div class="invalid-feedback">
                             Debes llenar este campo con un correo electronico.
                         </div>
                     </div>
                 </div>
-                <div class="form-group col-lg-auto">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-lg-4">
                     <label for="validationCustom04">Estado civil:&nbsp;</label>
-                    <select class="form-control form-control-sm" id="validationCustom04" placeholder="" required>
+                    <select class="form-control" id="validationCustom04" placeholder="" required>
                             <option value="-1">Elija una opción</option>
                             <option value="0">Casado</option>
                             <option value="1">Soltero</option>
@@ -49,11 +51,9 @@
                         Debes escojer una opción
                     </div>
                 </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
+                <div class="form-group col-lg-4">
                     <label for="validationCustom05">Nivel de formación:&nbsp;</label>
-                    <select class="form-control form-control-sm" id="validationCustom05" required>
+                    <select class="form-control" id="validationCustom05" required>
                         <option value="-1">Elija una opción</option>
                         <option value="0">Primaria</option>
                         <option value="1">Secundaria</option>
@@ -66,48 +66,50 @@
                         Debes escojer una opción.
                     </div>
                 </div>
-                <div class="form-group col-lg-auto">
+                <div class="form-group col-lg-4">
                     <label for="">Ultimo titulo obtenido:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" placeholder="Ultima Titulación">
-                </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="validationCustom06">Número de teléfono:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" id="validationCustom06" placeholder="Teléfono 1" value="" required>
-                    <input type="text" class="form-control form-control-sm" id="validationCustom061" placeholder="Teléfono 2" value="">
-                    <input type="text" class="form-control form-control-sm" id="validationCustom062" placeholder="Teléfono 3" value="">
-                    <div class="invalid-feedback">
-                        Debes llenar este campo.
-                    </div>
-                </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="validationCustom07">Fecha de nacimiento:&nbsp;</label>
-                    <input type="date" class="form-control form-control-sm" id="validationCustom07" value="" required>
-                    <div class="invalid-feedback">
-                        Debes llenar este campo.
-                    </div>
-                </div>
-                <div class="form-group col-lg-auto">
-                    <label for="validationCustom08">Cantidad de hijos:&nbsp;</label>
-                    <input type="number" class="form-control form-control-sm" placeholder="0" style="width: 50px;">
+                    <input type="text" class="form-control" id='validationCustom09' placeholder="Última Titulación">
                     <div class="invalid-feedback">
                         Debes escojer una opción.
                     </div>
                 </div>
-            </div><br><br>
+            </div>
             <div class="form-row">
-                <div class="form-group col-lg-auto">
+                <label for="validationCustom06">Número de teléfono:&nbsp;</label>
+                <div class="form-group row col-lg-12 ">
+
+                    <input type="text" class="form-control col-4 m-auto" id="validationCustom06" placeholder="Teléfono 1" value="" required>
+                    <input type="text" class="form-control col-4 m-auto" id="validationCustom061" placeholder="Teléfono 2" value="">
+                    <input type="text" class="form-control col-4 m-auto" id="validationCustom062" placeholder="Teléfono 3" value="">
+                </div>
+                <div class="invalid-feedback col-4">
+                    Debes llenar este campo.
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-lg-3">
+                    <label for="validationCustom07">Fecha de nacimiento:&nbsp;</label>
+                    <input type="date" class="form-control" id="validationCustom07" value="" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
+                </div>
+                <div class="form-group col-lg-2">
+                    <label for="validationCustom08">Cantidad de hijos:&nbsp;</label>
+                    <input type="number" class="form-control" placeholder="0" style="width: 50px;">
+                    <div class="invalid-feedback">
+                        Debes escojer una opción.
+                    </div>
+                </div>
+                <div class="form-group col-lg-7">
                     <label for="validationCustom03">Dirección: &nbsp;</label>
                     <textarea type="" class="form-control" id="validationCustom03" placeholder="Dirección Exacta" rows="3" cols="100" required></textarea>
                     <div class="invalid-feedback">
                         Debes llenar este campo.
                     </div>
                 </div>
-            </div><br><br>
-            <button class="btn btn-primary btn-block" type="button" (click)='AgregarEmpleado()' id="btn-agregarEmpleado" style="margin-top: 20px;">Agregar Empleado</button>
+            </div>
+            <button class="btn btn-outline-primary col-sm-12 col-md-6 col-lg-4 btn-block mt-3" type="button" (click)='AgregarEmpleado()' id="btn-agregarEmpleado">Agregar Empleado</button>
         </form>
     </div>
 </div>

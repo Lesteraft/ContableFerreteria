@@ -50,14 +50,15 @@ button {
 
 /* MEDIA QUERY */
 
-@media only screen and (max-width: 1140PX) {
-    .barraLateral {
-        padding-left: 1.5rem !important;
+@media only screen and (min-width: 767px) {
+    .miniatura {
+        padding: 2rem !important;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .padding-left-auto {
+@media only screen and (max-width: 767px) {
+    .miniatura {
         padding-left: 0 !important;
+        padding-top: 2rem;
     }
 }

@@ -25,8 +25,9 @@ export class AddEmpleadoComponent implements OnInit {
           this.validar('#validationCustom05') ||
           this.validar('#validationCustom06') ||
           this.validar('#validationCustom07') ||
-          this.validar('#validationCustom08') ||
-          this.validar('#validationCustom03')
+          this.validar('#validationCustom03') ||
+          this.validar('#validationCustom09') ||
+          this.validar('#validationCustom08')
           // this.validar('#validationCustomUsername')
         )
           &&
@@ -49,7 +50,7 @@ export class AddEmpleadoComponent implements OnInit {
 }
 
   validar(id) {
-    if ($(id).val() === '' || $(id).val() === '-1' ) {
+    if ($(id).val() === '' || $(id).val() === '-1'  ) {
         $(id).removeClass('is-valid');
         $(id).addClass('is-invalid');
         return false;
