@@ -36,6 +36,7 @@ import { ClienteComponent } from './components/body/derecho/clientes/cliente/cli
 
 // childRoutes from Inventario
 import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
+import { IngresoMercaderiaComponent } from './components/body/derecho/inventario/ingreso-mercaderia/ingreso-mercaderia.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -91,6 +92,7 @@ export const ROUTES: Routes = [
         component: InventarioComponent,
         children: [
             {path: 'existencia', component: ExistenciaComponent},
+            {path: 'ingreso-mercaderia', component: IngresoMercaderiaComponent},
         ]
     },
     { path: '' , pathMatch: 'full', redirectTo:  'home' },
