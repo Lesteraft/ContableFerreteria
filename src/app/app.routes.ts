@@ -16,9 +16,9 @@ import { PlantillaComponent } from './components/body/derecho/recursos-humanos/p
 import { EmpleadoComponent } from './components/body/derecho/recursos-humanos/empleado/empleado.component';
 
 // childRoutes from Ventas
-import { AddProductoComponent } from './components/body/derecho/ventas/add-producto/add-producto.component';
-import { EliminarProductoComponent } from './components/body/derecho/ventas/eliminar-producto/eliminar-producto.component';
-import { ProductosComponent } from './components/body/derecho/ventas/productos/productos.component';
+import { OrdenVentaComponent } from './components/body/derecho/ventas/orden-venta/orden-venta.component';
+import { PeticionVentaComponent } from './components/body/derecho/ventas/orden-venta/peticion-venta/peticion-venta.component';
+import { ClienteVentaComponent } from './components/body/derecho/ventas/orden-venta/cliente-venta/cliente-venta.component';
 
 // childRoutes from Proveedores
 import { AniadirProveedorComponent } from './components/body/derecho/proveedores/aniadir-proveedor/aniadir-proveedor.component';
@@ -41,6 +41,8 @@ import { DatosEmbalajeComponent } from './components/body/derecho/inventario/ing
 import { DatosEmpaqueComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-empaque/datos-empaque.component';
 import { DatosGeneralesComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-generales/datos-generales.component';
 
+// childRoutes Modal
+import { ModalComponent } from './components/shared/modal/modal.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -56,13 +58,21 @@ export const ROUTES: Routes = [
             // {path: '**', component: NotFoundComponent}
         ]
     },
-    {
-        path: 'ventas',
+    {   path: 'ventas',
         component: VentaComponent,
         children: [
-            {path: 'add-producto', component: AddProductoComponent},
-            {path: 'eliminar-producto', component: EliminarProductoComponent},
-            {path: 'producto', component: ProductosComponent},
+            {   path: 'orden-venta',
+                component: OrdenVentaComponent,
+                children: [
+                    {path: 'peticion-venta', component: PeticionVentaComponent},
+                    {   path: 'cliente-venta',
+                        component: ClienteVentaComponent,
+                        children: [
+                            {path: 'busqueda-venta', component: ModalComponent}
+                        ]
+                    }
+                ]
+            },
         ]
     },
     {   path: 'proveedores',
