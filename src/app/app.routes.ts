@@ -16,9 +16,9 @@ import { PlantillaComponent } from './components/body/derecho/recursos-humanos/p
 import { EmpleadoComponent } from './components/body/derecho/recursos-humanos/empleado/empleado.component';
 
 // childRoutes from Ventas
-import { OrdenVentaComponent } from './components/body/derecho/ventas/orden-venta/orden-venta.component';
-import { PeticionVentaComponent } from './components/body/derecho/ventas/orden-venta/peticion-venta/peticion-venta.component';
-import { ClienteVentaComponent } from './components/body/derecho/ventas/orden-venta/cliente-venta/cliente-venta.component';
+import { AddProductoComponent } from './components/body/derecho/ventas/add-producto/add-producto.component';
+import { EliminarProductoComponent } from './components/body/derecho/ventas/eliminar-producto/eliminar-producto.component';
+import { ProductosComponent } from './components/body/derecho/ventas/productos/productos.component';
 
 // childRoutes from Proveedores
 import { AniadirProveedorComponent } from './components/body/derecho/proveedores/aniadir-proveedor/aniadir-proveedor.component';
@@ -37,12 +37,6 @@ import { ClienteComponent } from './components/body/derecho/clientes/cliente/cli
 // childRoutes from Inventario
 import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
 import { IngresoMercaderiaComponent } from './components/body/derecho/inventario/ingreso-mercaderia/ingreso-mercaderia.component';
-import { DatosEmbalajeComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-embalaje/datos-embalaje.component';
-import { DatosEmpaqueComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-empaque/datos-empaque.component';
-import { DatosGeneralesComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-generales/datos-generales.component';
-
-// childRoutes Modal
-import { ModalComponent } from './components/shared/modal/modal.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -58,21 +52,13 @@ export const ROUTES: Routes = [
             // {path: '**', component: NotFoundComponent}
         ]
     },
-    {   path: 'ventas',
+    {
+        path: 'ventas',
         component: VentaComponent,
         children: [
-            {   path: 'orden-venta',
-                component: OrdenVentaComponent,
-                children: [
-                    {path: 'peticion-venta', component: PeticionVentaComponent},
-                    {   path: 'cliente-venta',
-                        component: ClienteVentaComponent,
-                        children: [
-                            {path: 'busqueda-venta', component: ModalComponent}
-                        ]
-                    }
-                ]
-            },
+            {path: 'add-producto', component: AddProductoComponent},
+            {path: 'eliminar-producto', component: EliminarProductoComponent},
+            {path: 'producto', component: ProductosComponent},
         ]
     },
     {   path: 'proveedores',
@@ -106,14 +92,7 @@ export const ROUTES: Routes = [
         component: InventarioComponent,
         children: [
             {path: 'existencia', component: ExistenciaComponent},
-            {   path: 'ingreso-mercaderia',
-                component: IngresoMercaderiaComponent,
-                children: [
-                    {path: 'datos-generales', component: DatosGeneralesComponent},
-                    {path: 'embalaje', component: DatosEmbalajeComponent},
-                    {path: 'empaque', component: DatosEmpaqueComponent},
-                ],
-            },
+            {path: 'ingreso-mercaderia', component: IngresoMercaderiaComponent},
         ]
     },
     { path: '' , pathMatch: 'full', redirectTo:  'home' },

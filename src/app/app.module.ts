@@ -28,6 +28,9 @@ import { EmpleadoComponent } from './components/body/derecho/recursos-humanos/em
 import { AddClienteComponent } from './components/body/derecho/clientes/add-cliente/add-cliente.component';
 import { EliminarClienteComponent } from './components/body/derecho/clientes/eliminar-cliente/eliminar-cliente.component';
 import { ClienteComponent } from './components/body/derecho/clientes/cliente/cliente.component';
+import { ProductosComponent } from './components/body/derecho/ventas/productos/productos.component';
+import { AddProductoComponent } from './components/body/derecho/ventas/add-producto/add-producto.component';
+import { EliminarProductoComponent } from './components/body/derecho/ventas/eliminar-producto/eliminar-producto.component';
 import { OrdenCompraComponent } from './components/body/derecho/compra/orden-compra/orden-compra.component';
 import { PeticionComponent } from './components/body/derecho/compra/orden-compra/peticion/peticion.component';
 import { ProveedorCompraComponent } from './components/body/derecho/compra/orden-compra/proveedor-compra/proveedor-compra.component';
@@ -35,13 +38,6 @@ import { AniadirProveedorComponent } from './components/body/derecho/proveedores
 import { DeleteProveedorComponent } from './components/body/derecho/proveedores/delete-proveedor/delete-proveedor.component';
 import { ExistenciaComponent } from './components/body/derecho/inventario/existencia/existencia.component';
 import { IngresoMercaderiaComponent } from './components/body/derecho/inventario/ingreso-mercaderia/ingreso-mercaderia.component';
-import { DatosGeneralesComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-generales/datos-generales.component';
-import { DatosEmbalajeComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-embalaje/datos-embalaje.component';
-import { DatosEmpaqueComponent } from './components/body/derecho/inventario/ingreso-mercaderia/datos-empaque/datos-empaque.component';
-import { OrdenVentaComponent } from './components/body/derecho/ventas/orden-venta/orden-venta.component';
-import { PeticionVentaComponent } from './components/body/derecho/ventas/orden-venta/peticion-venta/peticion-venta.component';
-import { ClienteVentaComponent } from './components/body/derecho/ventas/orden-venta/cliente-venta/cliente-venta.component';
-import { ModalComponent } from './components/shared/modal/modal.component';
 
 
 @NgModule({
@@ -58,6 +54,9 @@ import { ModalComponent } from './components/shared/modal/modal.component';
     AddClienteComponent,
     EliminarClienteComponent,
     ClienteComponent,
+    ProductosComponent,
+    AddProductoComponent,
+    EliminarProductoComponent,
     ProveedoresComponent,
     CompraComponent,
     OrdenCompraComponent,
@@ -70,13 +69,6 @@ import { ModalComponent } from './components/shared/modal/modal.component';
     InventarioComponent,
     ExistenciaComponent,
     IngresoMercaderiaComponent,
-    DatosGeneralesComponent,
-    DatosEmbalajeComponent,
-    DatosEmpaqueComponent,
-    OrdenVentaComponent,
-    PeticionVentaComponent,
-    ClienteVentaComponent,
-    ModalComponent,
   ],
   imports: [
     BrowserModule,
