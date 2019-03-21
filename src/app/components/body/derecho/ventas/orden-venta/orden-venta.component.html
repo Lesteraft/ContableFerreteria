@@ -1,0 +1,23 @@
+<div class="card border-info">
+    <div class="card-body text-center">
+        <h5>Orden de Venta</h5>
+    </div>
+</div>
+<hr>
+<div class="card text-center">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['peticion-venta']" routerLinkActive="active">Petición de Compra</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['cliente-venta']" routerLinkActive="active">Cliente</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body">
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
