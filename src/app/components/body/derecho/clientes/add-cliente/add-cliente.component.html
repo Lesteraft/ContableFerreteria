@@ -1,110 +1,145 @@
-<div class="card border-info">
-    <div class="card-body text-center">
-        <h5>Añadir Cliente</h5>
+<div class="form">
+    <div class="card border-info">
+        <div class="card-body text-center">
+            <h5>Añadir Cliente</h5>
+        </div>
     </div>
-</div>
-<hr>
-<div class="card">
-    <div class="card-header">
-        <h6>Datos Personales</h6>
-    </div>
-    <div class="card-body">
-        <form class="form-inline">
+    <hr>
+    <div class="card">
+        <div class="card-header">
+            <h6>Datos Personales</h6>
+        </div>
+        <div class="card-body">
             <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="validationTooltip01">Nombre Cliente:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" id="validationTooltip01" placeholder="Razón social" value="" required>
-                    <div class="invalid-tooltip">
-                        Looks good!
+                <div class="form-group ml-0 col-sm-6 col-lg-4">
+                    <label for="validationCustom01">Nombre Cliente:&nbsp;</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre cliente" value="" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
                     </div>
                 </div>
-                <div class="form-group col-lg-auto">
-                    <label for="">Correo Electronico:&nbsp;</label>
-                    <input type="email" class="form-control form-control-sm" placeholder="xxx@xxx.xxx">
+                <div class="form-group ml-0 col-sm-6 col-lg-4">
+                    <label for="validationCustomUsername">Correo Electrónico:&nbsp;</label>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="validationCustomUsername" placeholder="Correo electrónico" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Debes llenar este campo con un correo electronico.
+                        </div>
+                    </div>
                 </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="">Telefonos de Contacto:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" placeholder="Contacto 1">&nbsp;
-                    <input type="text" class="form-control form-control-sm" placeholder="Contacto 2">&nbsp;
-                    <input type="text" class="form-control form-control-sm" placeholder="Contacto 3">
-                </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="">Ciudad:&nbsp;</label>
-                    <select name="slcCiudad" id="slcCiudad" class="form-control form-control-sm">
-                        <option>Ciudad</option>
-                    </select>
-                </div>
-                <div class="form-group col-lg-auto">
-                    <label for="">Zona:&nbsp;</label>
-                    <select name="slcZona" id="slcZona" class="form-control form-control-sm">
-                        <option>Zona</option>
-                    </select>
-                </div>
-                <div class="form-group col-lg-auto">
-                    <label for="">Distrito:&nbsp;</label>
-                    <select name="slcDistrito" id="slcDistrito" class="form-control form-control-sm">
-                        <option>Distrito</option>
-                    </select>
-                </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="">Dirección Exacta:&nbsp;</label>
-                    <textarea name="txtADireccionExacta" id="txtADireccionExacta" cols="100" class="form-control"></textarea>
+                <div class="form-group ml-0 col-sm-6 col-lg-4">
+                    <label for="validationCustom04">Estado civil:&nbsp;</label>
+                    <select class="form-control" id="validationCustom04" placeholder="" required>
+                                        <option value="-1">Elija una opción</option>
+                                        <option value="0">Casado</option>
+                                        <option value="1">Soltero</option>
+                                        <option value="2">Divorciado</option>
+                                        <option value="3">Viudo</option>
+                                    </select>
+                    <div class="invalid-feedback">
+                        Debes escojer una opción
+                    </div>
                 </div>
             </div>
-        </form>
-    </div>
-</div><br>
-<div class="card">
-    <div class="card-header">
-        <h6>Datos Fiscales</h6>
-    </div>
-    <div class="card-body">
-        <form class="form-inline">
+            <div class='form-group row ml-0 col-sm-6 col-lg-4 mb-0 mt-1'>
+                <label for="validationCustom06">Número de teléfono:&nbsp;</label>
+            </div>
             <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="">Razón Social:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" placeholder="Razon Social">
+                <div class="form-group row ml-0 col-sm-6 col-lg-4 ">
+                    <input type="text" class="form-control m-auto" id="validationCustom06" placeholder="Teléfono 1" value="" required>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
                 </div>
-                <div class="form-group col-lg-auto">
-                    <label for="">R.U.C.:&nbsp;</label>
-                    <input type="text" class="form-control form-control-sm" placeholder="Ej: XXXXXXXXXXX">
+
+                <div class="form-group row ml-0 col-sm-6 col-lg-4 ">
+                    <input type="text" class="form-control m-auto" id="validationCustom061" placeholder="Teléfono 2" value="">
                 </div>
-            </div><br><br>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="">Dirección Fiscal:&nbsp;</label>
-                    <textarea class="form-control" name="txtADireccionFiscal" id="txtADireccionFiscal" rows="2" cols="100" placeholder="Direccion Fiscal"></textarea>
+                <div class="form-group row ml-0 col-sm-6 col-lg-4 ">
+                    <input type="text" class="form-control m-auto" id="validationCustom062" placeholder="Teléfono 3" value="">
                 </div>
             </div>
-        </form>
-    </div>
-</div>
-<div class="card">
-    <div class="card-header">
-        <h6>Datos Financieros</h6>
-    </div>
-    <div class="card-body">
-        <form class="form-inline">
             <div class="form-row">
-                <div class="form-group col-lg-auto">
-                    <label for="">Linea de Credito:&nbsp;</label>
-                    <select name="slcLineaCredito" id="slcLineaCredito" class="form-control">
-                        <option>Linea de Credito</option>
-                    </select>
+                <div class="form-group ml-0 col-sm-6 col-lg-4">
+                    <label for="validationCustom07">Ciudad:&nbsp;</label>
+                    <select class="form-control" id="validationCustom07" placeholder="" required>
+                            <option value="-1">Elija una opción</option>
+                            <option value="0">Ciudad 1</option>
+                            <option value="1">Ciudad 2</option>
+                            <option value="2">Ciudad 3</option>
+                            <option value="3">Ciudad 4</option>
+                        </select>
+                    <div class="invalid-feedback">
+                        Debes escojer una opción
+                    </div>
                 </div>
-                <div class="form-group col-lg-auto">
-                    <label for="">Tipo de Cliente:&nbsp;</label>
-                    <select name="slcTipoCliente" id="slcTipoCliente" class="form-control">
-                        <option>Tipo de Cliente</option>
-                    </select>
+                <div class="form-group ml-0 col-sm-6 col-lg-4">
+                    <label for="validationCustom08">Zona:&nbsp;</label>
+                    <select class="form-control" id="validationCustom08" placeholder="" required>
+                            <option value="-1">Elija una opción</option>
+                            <option value="0">Zona 1</option>
+                            <option value="1">Zona 2</option>
+                            <option value="2">Zona 3</option>
+                            <option value="3">Zona 4</option>
+                        </select>
+                    <div class="invalid-feedback">
+                        Debes escojer una opción
+                    </div>
+                </div>
+                <div class="form-group ml-0 col-sm-6 col-lg-4">
+                    <label for="validationCustom03">Distrito:&nbsp;</label>
+                    <select class="form-control" id="validationCustom03" placeholder="" required>
+                            <option value="-1">Elija una opción</option>
+                            <option value="0">Distrito 1</option>
+                            <option value="1">Distrito 2</option>
+                            <option value="2">Distrito 3</option>
+                            <option value="3">Distrito 4</option>
+                        </select>
+                    <div class="invalid-feedback">
+                        Debes escojer una opción
+                    </div>
+                </div>
+                <div class="form-group ml-0 col-sm-12 col-lg-7 ml-0">
+                    <label for="validationCustom03">Dirección: &nbsp;</label>
+                    <textarea type="" class="form-control left" id="validationCustom03" placeholder="Dirección Exacta" rows="3" cols="100" required></textarea>
+                    <div class="invalid-feedback">
+                        Debes llenar este campo.
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
+    </div>
+    <div class="card ">
+        <div class="card-header">
+            <h6>Datos Financieros</h6>
+        </div>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col-sm-6 col-lg-6">
+                    <label for="validationCustomUsername">Linea de Credito:&nbsp;</label>
+                    <div class="input-group">
+                        <select name="slcLineaCredito" id="slcLineaCredito" class="form-control">
+                            <option>Linea de Credito</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Debes llenar este campo con un correo electronico.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6 col-lg-6">
+                    <label for="validationCustomUsername">Tipo de Cliente:&nbsp;</label>
+                    <div class="input-group">
+                        <select name="slcLineaCredito" id="slcLineaCredito" class="form-control">
+                            <option>Tipo de Cliente</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Debes llenar este campo con un correo electronico.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-primary col-sm-12 ml-0  col-lg-6 btn-block mt-3" type="button" id="btn-agregarEmpleado">Agregar Cliente</button>
+        </div>
     </div>
 </div>
