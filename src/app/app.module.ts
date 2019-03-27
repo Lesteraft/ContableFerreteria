@@ -29,6 +29,9 @@ import { EmpleadoComponent } from './components/body/derecho/recursos-humanos/em
 import { AddClienteComponent } from './components/body/derecho/clientes/add-cliente/add-cliente.component';
 import { EliminarClienteComponent } from './components/body/derecho/clientes/eliminar-cliente/eliminar-cliente.component';
 import { ClienteComponent } from './components/body/derecho/clientes/cliente/cliente.component';
+import { ProductosComponent } from './components/body/derecho/ventas/productos/productos.component';
+import { AddProductoComponent } from './components/body/derecho/ventas/add-producto/add-producto.component';
+import { EliminarProductoComponent } from './components/body/derecho/ventas/eliminar-producto/eliminar-producto.component';
 import { OrdenCompraComponent } from './components/body/derecho/compra/orden-compra/orden-compra.component';
 import { PeticionComponent } from './components/body/derecho/compra/orden-compra/peticion/peticion.component';
 import { ProveedorCompraComponent } from './components/body/derecho/compra/orden-compra/proveedor-compra/proveedor-compra.component';
@@ -62,6 +65,9 @@ import { PagoOrdenComponent } from './components/body/derecho/compra/pago-orden/
     AddClienteComponent,
     EliminarClienteComponent,
     ClienteComponent,
+    ProductosComponent,
+    AddProductoComponent,
+    EliminarProductoComponent,
     ProveedoresComponent,
     CompraComponent,
     OrdenCompraComponent,

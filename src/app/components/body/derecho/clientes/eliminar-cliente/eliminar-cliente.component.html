@@ -10,7 +10,7 @@
     </div>
     <div class="card-body">
         <div class='row'>
-            <div class='col-5'>
+            <div class=' form-group col-lg-6'>
                 <select class="custom-select">
                     <option selected>Buscar por: </option>
                     <option value="1">Codigo cliente</option>
@@ -18,10 +18,10 @@
                     <option value="4">Producto</option>
                 </select>
             </div>
-            <div class="col-5 ">
+            <div class="form-group col-lg-6 ">
                 <input type="text" name="" class='form-control' placeholder="buscar" id="">
             </div>
-            <div class='col-2 '>
+            <div class='form-group col-xl-4 col-md-6 '>
                 <button class='form-control btn btn-outline-info'> BUSCAR </button>
             </div>
         </div>
@@ -32,4 +32,67 @@
         <h6>Información Cliente</h6>
     </div>
     <div class="card-body"></div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Razones de la Eliminación</h6>
+    </div>
+    <div class="card-body ml-3 mr-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomclienteD04">
+            <label class="form-check-label" for="validationCustomclienteD04">
+                  Caduca
+              </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomclienteD05">
+            <label class="form-check-label" for="validationCustomclienteD05">
+                  Mal Comportamiento
+              </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomclienteD06">
+            <label class="form-check-label" for="validationCustomclienteD06">
+                  Quejas Continuas
+              </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomclienteD07">
+            <label class="form-check-label" for="validationCustomclienteD07">
+                  No Satisface las Necesidades
+              </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomclienteD07">
+            <label class="form-check-label" for="validationCustomclienteD07">
+                  Cierre de Operaciones
+              </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="validationCustomclienteD08">
+            <label class="form-check-label" for="validationCustomclienteD08">
+                  Otros
+              </label>
+        </div><br><br>
+        <!--Material textarea-->
+        <div class="md-form">
+            <textarea id="form7" class="md-textarea form-control" rows="3"></textarea>
+            <label for="form7">Material textarea</label>
+        </div>
+    </div>
+</div>
+<div class="card mt-3">
+    <div class="card-header">
+        <h6>Peligro</h6>
+    </div>
+    <div class="card-body">
+        <cite title="Source Title">Bajo estas Acciones, se esta conciente que no se podra volver a recuperar la
+              información de dicho cliente.</cite>
+    </div>
+</div>
+<hr>
+<div class="card border-danger">
+    <div class="card-body text-center">
+        <button class="btn btn-danger btn-block">Eliminar cliente</button>
+    </div>
 </div>

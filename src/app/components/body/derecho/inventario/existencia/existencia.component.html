@@ -9,11 +9,15 @@
         <h6>Busqueda</h6>
     </div>
     <div class="card-body">
-        <form class="form-inline">
-            <div class="form-group">
-                <label for="">Código de Articulo:&nbsp;</label>
-                <input type="text" class="form-control form-control-sm" placeholder="Ej: XXXXX">
-                <button class="btn btn-primary btn-sm">Buscar</button>
+        <form class="form">
+            <div class="row col-lg-12 w-100 ">
+                <label for="txt-cdart" class='col-lg-12'>Código de Articulo:&nbsp;</label>
+                <div class="form-group col-lg-5">
+                    <input type="text" id="txt-cdart" class="form-control form-control " placeholder="Ej: XXXXX">
+                </div>
+                <div class=" form-group col-lg-4">
+                    <button class="btn btn-outline-primary btn-block">Buscar</button>
+                </div>
             </div>
         </form>
     </div>
@@ -23,7 +27,7 @@
         <h6>Articulo</h6>
     </div>
     <div class="card-body">
-        <table class="table table-striped table-sm table-bordered">
+        <table class="table table-hover table-bordered">
             <thead>
                 <tr class="text-center">
                     <th scope="col">#</th>
@@ -36,7 +40,7 @@
                     <th scope="col">Apartado</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class='text-center'>
                 <tr>
                     <th scope="row">1</th>
                     <td>Tienda 01</td>
