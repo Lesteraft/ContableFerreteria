@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // importar rutas
 // rutas shared
@@ -42,6 +43,9 @@ import { OrdenVentaComponent } from './components/body/derecho/ventas/orden-vent
 import { PeticionVentaComponent } from './components/body/derecho/ventas/orden-venta/peticion-venta/peticion-venta.component';
 import { ClienteVentaComponent } from './components/body/derecho/ventas/orden-venta/cliente-venta/cliente-venta.component';
 import { ModalComponent } from './components/shared/modal/modal.component';
+import { VerificarOrdenComponent } from './components/body/derecho/compra/verificar-orden/verificar-orden.component';
+import { EliminarOrdenComponent } from './components/body/derecho/compra/eliminar-orden/eliminar-orden.component';
+import { PagoOrdenComponent } from './components/body/derecho/compra/pago-orden/pago-orden.component';
 
 
 @NgModule({
@@ -77,10 +81,14 @@ import { ModalComponent } from './components/shared/modal/modal.component';
     PeticionVentaComponent,
     ClienteVentaComponent,
     ModalComponent,
+    VerificarOrdenComponent,
+    EliminarOrdenComponent,
+    PagoOrdenComponent,
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot( ROUTES , { useHash: true } )
+    RouterModule.forRoot( ROUTES , { useHash: true } ),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

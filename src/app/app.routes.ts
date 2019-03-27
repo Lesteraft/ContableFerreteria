@@ -28,6 +28,9 @@ import { DeleteProveedorComponent } from './components/body/derecho/proveedores/
 import { OrdenCompraComponent } from './components/body/derecho/compra/orden-compra/orden-compra.component';
 import { PeticionComponent } from './components/body/derecho/compra/orden-compra/peticion/peticion.component';
 import { ProveedorCompraComponent } from './components/body/derecho/compra/orden-compra/proveedor-compra/proveedor-compra.component';
+import { EliminarOrdenComponent } from './components/body/derecho/compra/eliminar-orden/eliminar-orden.component';
+import { VerificarOrdenComponent } from './components/body/derecho/compra/verificar-orden/verificar-orden.component';
+import { PagoOrdenComponent } from './components/body/derecho/compra/pago-orden/pago-orden.component';
 
 // childRoutes from Cliente
 import { AddClienteComponent } from './components/body/derecho/clientes/add-cliente/add-cliente.component';
@@ -46,8 +49,7 @@ import { ModalComponent } from './components/shared/modal/modal.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
-    {
-        path: 'recursos-humanos',
+    { path: 'recursos-humanos',
         component: RecursosHumanosComponent,
         children: [
             {path: 'add-empleado', component: AddEmpleadoComponent},
@@ -91,7 +93,10 @@ export const ROUTES: Routes = [
                     {path: 'peticion-compra', component: PeticionComponent},
                     {path: 'proveedor-compra', component: ProveedorCompraComponent}
                 ]
-            }
+            },
+            {path: 'eliminar-orden', component: EliminarOrdenComponent},
+            {path: 'verificar-orden', component: VerificarOrdenComponent},
+            {path: 'pago-orden', component: PagoOrdenComponent},
         ]
     },
     {   path: 'clientes',

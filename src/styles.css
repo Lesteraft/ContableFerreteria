@@ -1,3 +1,4 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 #bodyId {
     background-color: rgb(212, 231, 220);
 }

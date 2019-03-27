@@ -1,0 +1,116 @@
+<div class="card border-info">
+    <div class="card-body text-center">
+        <h5>Pago Ordén de Compra</h5>
+    </div>
+</div>
+<hr>
+<div class="card">
+    <div class="card-header">
+        <h6>Ordén de Pago</h6>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Autorizado Por:</span>
+                </div>
+                <input type="text" class="form-control form-control-sm" placeholder="Código Empleado">
+                <button class="btn btn-primary btn-sm">...</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Nombre Empleado" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Quien Deposita:</span>
+                </div>
+                <input type="text" class="form-control form-control-sm" placeholder="Código Empleado">
+                <button class="btn btn-primary btn-sm">...</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Nombre Empleado" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Ordén de Compra:</span>
+                </div>
+                <input type="text" class="form-control form-control-sm" placeholder="Código Ordén de Compra">
+                <button class="btn btn-primary btn-sm">...</button>
+                <button class="btn btn-success btn-sm">Detalle</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Proveedor" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Banco:</span>
+                </div>
+                <select type="text" class="form-control form-control-sm">
+              <option value="-1">Código Banco</option>
+            </select>
+                <button class="btn btn-primary btn-sm">...</button>
+                <button class="btn btn-success btn-sm">Detalle</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Número de Cuenta" disabled>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="card-footer text-center">
+        <div class="form-group">
+            <button class="btn btn-success" style="margin-right: 5%">Verificar Datos</button>
+            <button class="btn btn-primary">Generar Pago</button>
+        </div>
+
+
+
+    </div>
+</div><br>
+<div class="card">
+    <div class="card-header">
+        <h6>Confirmación de Pago</h6>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Ordén de Compra:</span>
+                </div>
+                <input type="text" class="form-control form-control-sm" placeholder="Código Ordén de Compra">
+                <button class="btn btn-primary btn-sm">...</button>
+                <button class="btn btn-success btn-sm">Detalle</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Proveedor" disabled>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Operación:</span>
+                </div>
+                <select type="text" class="form-control form-control-sm">
+              <option value="-1">Código de Banco</option>
+            </select>
+                <button class="btn btn-primary btn-sm">...</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Código de Operación">
+                <input type="text" class="form-control form-control-sm" placeholder="Monto">
+                <select name="slcUnidades" id="slcUnidades" type="text" class="form-control form-control-sm">
+                  <option value="-1">Unidades</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Depositante:</span>
+                </div>
+                <input type="text" class="form-control form-control-sm" placeholder="Código Empleado">
+                <button class="btn btn-primary btn-sm">...</button>
+                <input type="text" class="form-control form-control-sm" placeholder="Nombre Empleado" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-success" style="margin-right: 5%">Verificar Datos</button>
+        <button class="btn btn-secondary">Actualizar Pago</button>
+    </div>
+</div>
